@@ -4,6 +4,8 @@ Refer to this website: https://webpack.js.org/guides/getting-started/
 
 Steps to set up this projects
 
+GETTING STARTED
+
 1) npm init -y
 2) npm install webpack webpack-cli --save-dev
 3) package.json >> 
@@ -13,3 +15,7 @@ ADD "private": true,
 5) npx webpack
 6) create webpack.config.js
 7) add 'npm run build' to package.json
+
+ADDING HTML PLUGIN (Output Management)
+
+1)
