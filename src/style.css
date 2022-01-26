@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: 'Varela';
+  font-family: 'Varela', sans-serif;
 }
 
 h1 {
@@ -40,16 +40,16 @@ main {
   min-height: 10px;
 }
 
-#scores-list li {
-  padding: 5px 15px;
-}
-
 li:nth-child(even) {
   background: #ccc;
 }
 
 li:nth-child(odd) {
   background: #fff;
+}
+
+#scores-list li {
+  padding: 5px 15px;
 }
 
 #scores-form {
