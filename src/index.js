@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './style.css';
+import Icon from './cr_icon.jpg';
 import printMe from './print.js';
 
 
@@ -14,6 +15,11 @@ function component() {
     btn.onclick = printMe;
 
     element.appendChild(btn);
+
+    const myIcon = new Image();
+    myIcon.src = Icon;
+
+    element.appendChild(myIcon);
 
     return element;
 }

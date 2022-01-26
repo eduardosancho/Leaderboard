@@ -136,7 +136,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _print_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./print.js */ \"./src/print.js\");\n\n\n\n\n\nfunction component() {\n    const element = document.createElement('div');\n    const btn = document.createElement('button');\n\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n    element.classList.add('hello');\n\n    btn.innerHTML = 'Click me and check the console!';\n    btn.onclick = _print_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\n\n    element.appendChild(btn);\n\n    return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _cr_icon_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cr_icon.jpg */ \"./src/cr_icon.jpg\");\n/* harmony import */ var _print_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./print.js */ \"./src/print.js\");\n\n\n\n\n\n\nfunction component() {\n    const element = document.createElement('div');\n    const btn = document.createElement('button');\n\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n    element.classList.add('hello');\n\n    btn.innerHTML = 'Click me and check the console!';\n    btn.onclick = _print_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"];\n\n    element.appendChild(btn);\n\n    const myIcon = new Image();\n    myIcon.src = _cr_icon_jpg__WEBPACK_IMPORTED_MODULE_2__;\n\n    element.appendChild(myIcon);\n\n    return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
 
 /***/ }),
 
@@ -148,6 +148,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ printMe)\n/* harmony export */ });\nfunction printMe() {\n    console.log('I get called from print.js!');\n}\n\n//# sourceURL=webpack://leaderboard/./src/print.js?");
+
+/***/ }),
+
+/***/ "./src/cr_icon.jpg":
+/*!*************************!*\
+  !*** ./src/cr_icon.jpg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"0c9ebee91572fbcf4f7b.jpg\";\n\n//# sourceURL=webpack://leaderboard/./src/cr_icon.jpg?");
 
 /***/ })
 
@@ -240,6 +251,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
