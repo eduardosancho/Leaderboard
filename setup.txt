@@ -16,6 +16,6 @@ ADD "private": true,
 6) create webpack.config.js
 7) add 'npm run build' to package.json
 
-ADDING HTML PLUGIN (Output Management)
+Loading images, CSS and fonts is recommended, but is not always required.
 
-1)
+Webpack devserver is recommended, but not required.
