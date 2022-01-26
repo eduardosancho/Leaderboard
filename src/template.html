@@ -9,24 +9,36 @@
 </head>
 
 <body>
-    <h1>Leaderboard</h1>
+    <header>
+        <h1>Leaderboard </h1>
+    </header> 
 
-    <div id="recent-scores">
-        <h2>Recent scores</h2>
-        <button type="button" id="refresh-button">Refresh</button>
-        <ul id="scores-list">
-            <li>hi</li>
-            <li>bye</li>
-        </ul>
-    </div>
+    <main>
+        <div id="recent-scores">
+            <div class="top">
+                <h2>Recent scores</h2>
+                <button type="button" id="refresh-button">Refresh</button>
+            </div>
+            <ul id="scores-list">
+                <li>Name: 100</li>
+                <li>Name: 20</li>
+                <li>Name: 50</li>
+                <li>Name: 78</li>
+                <li>Name: 125</li>
+                <li>Name: 77</li>
+                <li>Name: 42</li>
+            </ul>
+        </div>
 
-    <div id="form-container">
-        <form action="submit" id="scores-form">
-            <input type="text" id="score-name-input" placeholder="Your name">
-            <input type="text" id="score-number-input" placeholder="Your score">
-            <input type="button" id="add-score" value="Submit">
-        </form>
-    </div>
+        <div id="form-container">
+            <h2>Add your score</h2>
+            <form action="submit" id="scores-form">
+                <input type="text" id="score-name-input" placeholder="Your name">
+                <input type="text" id="score-number-input" placeholder="Your score">
+                <input type="button" id="add-score" value="Submit">
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
