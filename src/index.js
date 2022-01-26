@@ -13,24 +13,7 @@ addScoreForm.addEventListener('submit', (e) => {
 const addScoreButton = document.getElementById('add-score');
 addScoreButton.addEventListener('click', () => scoresList.addScore());
 
+const refreshButton = document.getElementById('refresh-button');
+refreshButton.addEventListener('click', () => scoresList.refreshScores())
+
 scoresList.displayList();
-
-
-
-
-/* function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
-
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
-
-    element.appendChild(btn);
-
-    return element;
-}
-
-document.body.appendChild(component()); */

@@ -27,4 +27,10 @@ export default class ScoresList {
         document.getElementById('score-name-input').value = '';
         document.getElementById('score-number-input').value = '';
     }
+
+    refreshScores() {
+        this.scores = [];
+        this.storeData();
+        this.displayList();
+    }
 }
