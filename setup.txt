@@ -1,0 +1,15 @@
+# Leaderboard
+
+Refer to this website: https://webpack.js.org/guides/getting-started/
+
+Steps to set up this projects
+
+1) npm init -y
+2) npm install webpack webpack-cli --save-dev
+3) package.json >> 
+ERASE "main": "index.js", 
+ADD "private": true,
+4) npm install --save lodash
+5) npx webpack
+6) create webpack.config.js
+7) add 'npm run build' to package.json
