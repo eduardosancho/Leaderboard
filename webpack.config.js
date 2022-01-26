@@ -14,6 +14,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Development Leaderboard',
+            template: './src/template.html',
         }),
     ],
     module: {
