@@ -9,6 +9,11 @@
   font-family: 'Varela';
 }
 
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
 main {
   display: flex;
   justify-content: space-around;
@@ -32,6 +37,7 @@ main {
   border: solid black 2px;
   list-style: none;
   padding-inline-start: 0;
+  min-height: 10px;
 }
 
 #scores-list li {
