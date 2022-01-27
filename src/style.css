@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Varela';
+  src: url('./VarelaRound-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Varela', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#recent-scores .top {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+#recent-scores button {
+  border: solid black 1px;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+#scores-list {
+  border: solid black 2px;
+  list-style: none;
+  padding-inline-start: 0;
+  min-height: 10px;
+}
+
+li:nth-child(even) {
+  background: #ccc;
+}
+
+li:nth-child(odd) {
+  background: #fff;
+}
+
+#scores-list li {
+  padding: 5px 15px;
+}
+
+#scores-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#scores-form input {
+  border: solid black 1px;
+  background-color: transparent;
+  height: 30px;
+}
+
+#scores-form input:last-child {
+  align-self: flex-end;
+  border: solid black 1px;
+  border-radius: 0;
+  box-shadow: 2px 2px rgb(0, 0, 0);
+  height: initial;
+}
