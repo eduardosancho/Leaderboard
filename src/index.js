@@ -1,6 +1,4 @@
-// import _ from 'lodash';
 import './style.css';
-// import printMe from './print.js';
 import ScoresList from './modules/ScoresList';
 
 const scoresList = new ScoresList();
@@ -11,7 +9,7 @@ addScoreForm.addEventListener('submit', (e) => {
   scoresList.addScore();
 });
 const addScoreButton = document.getElementById('add-score');
-addScoreButton.addEventListener('click', () => scoresList.addScore());
+addScoreButton.addEventListener('click', () => addScoreForm.trigger('submit'));
 
 const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', () => scoresList.refreshScores());
