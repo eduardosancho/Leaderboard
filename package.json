@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/eduardosancho/Leaderboard#readme",
   "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -38,6 +41,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
+    "express": "^4.17.2",
     "lodash": "^4.17.21"
   }
 }
