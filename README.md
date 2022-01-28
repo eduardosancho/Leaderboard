@@ -2,7 +2,7 @@
 
 # Leaderboard
 
-> Keep a record of users' scores.
+> Keep a record of users' scores. Use async functions to consume the API, `POST` new scores and `fetch` the updated scoreboard.
 
 # Live Version
 This is the [link](https://eduardosancho.github.io/Leaderboard/dist/index.html) that will direct you to the live version.
