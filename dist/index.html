@@ -10,24 +10,25 @@
 
 <body>
     <header>
-        <h1>Leaderboard </h1>
+        <h1>Death Count</h1>
     </header> 
 
     <main>
         <div id="recent-scores">
             <div class="top">
-                <h2>Recent scores</h2>
+                <h2>Latest deatch count</h2>
                 <button type="button" id="refresh-button">Refresh</button>
             </div>
             <ul id="scores-list"></ul>
         </div>
 
         <div id="form-container">
-            <h2>Add your score</h2>
+            <h2>Add your deaths</h2>
             <form action="submit" id="scores-form">
-                <input type="text" id="score-name-input" placeholder="Your name" required>
-                <input type="number" id="score-number-input" placeholder="Your score" min="0" max="100" required>
+                <input type="text" id="score-name-input" placeholder="Your name" maxlength="15" required>
+                <input type="number" id="score-number-input" placeholder="Your deaths" min="0" max="100" required>
                 <input type="submit" id="add-score" value="Submit">
+                <span class="hidden"></span>
             </form>
         </div>
     </main>
