@@ -1,7 +1,10 @@
 import './style.css';
 import addScore from './modules/addScore';
 import { getData } from './modules/data';
-import addGame from './modules/addGame';
+// import addGame from './modules/addGame';
+
+//Run this to get new game ID
+// window.addEventListener('load', addGame);
 
 const addScoreForm = document.getElementById('scores-form');
 addScoreForm.addEventListener('submit', (e) => {
@@ -18,5 +21,3 @@ refreshButton.addEventListener('click', () => {
   const board = getData();
   displayList(board);
 });
-
-window.addEventListener('load', addGame);

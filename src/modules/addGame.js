@@ -1,7 +1,7 @@
 import "babel-polyfill";
 
 const basicURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-let gameId = 'kx9a3dil6og5G5rfrqFt';
+let gameId = 'kx9a3dil6og5G5rfrqFt';  //SudokuOrigami GameID
 
 //https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/kx9a3dil6og5G5rfrqFt/scores/
 
