@@ -53,7 +53,8 @@ main {
   border: solid var(--black) 2px;
   list-style: none;
   padding-inline-start: 0;
-  min-height: 10px;
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 li:nth-child(even) {
