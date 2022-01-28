@@ -5,6 +5,12 @@
   font-style: normal;
 }
 
+:root {
+  --white: #fff;
+  --gray: #ccc;
+  --black: #000
+}
+
 * {
   font-family: 'Varela', sans-serif;
 }
@@ -13,6 +19,7 @@ body {
   background-image: url(./elden_ring.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  color: var(--white);
 }
 
 h1 {
@@ -33,29 +40,30 @@ main {
 }
 
 #recent-scores button {
-  border: solid black 1px;
+  border: solid var(--white) 1px;
   border-radius: 0;
-  background-color: transparent;
-  box-shadow: 2px 2px rgb(0, 0, 0);
+  background-color: var(--white);
+  box-shadow: 2px 2px var(--black);
 }
 
 #scores-list {
-  border: solid black 2px;
+  border: solid var(--black) 2px;
   list-style: none;
   padding-inline-start: 0;
   min-height: 10px;
 }
 
 li:nth-child(even) {
-  background: #ccc;
+  background: var(--gray);
 }
 
 li:nth-child(odd) {
-  background: #fff;
+  background: var(--white);
 }
 
 #scores-list li {
   padding: 5px 15px;
+  color: var(--black);
 }
 
 #scores-form {
@@ -65,15 +73,15 @@ li:nth-child(odd) {
 }
 
 #scores-form input {
-  border: solid black 1px;
-  background-color: transparent;
+  border: solid var(--white) 1px;
+  background-color: var(--white);
   height: 30px;
 }
 
 #scores-form input:last-child {
   align-self: flex-end;
-  border: solid black 1px;
+  border: solid var(--white) 1px;
   border-radius: 0;
-  box-shadow: 2px 2px rgb(0, 0, 0);
+  box-shadow: 2px 2px var(--black);
   height: initial;
 }
