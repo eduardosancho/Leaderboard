@@ -1,5 +1,6 @@
 import 'babel-polyfill';
 import displayList from './displayList';
+import showSuccess from './showSuccess';
 
 const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/kx9a3dil6og5G5rfrqFt/scores/';
 
@@ -20,8 +21,9 @@ const postData = async (data) => {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
-  await response.json();
+  const msg = await response.json();
   getData();
+  showSuccess(msg.result);
 };
 
 export { postData, getData };

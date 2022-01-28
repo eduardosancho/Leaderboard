@@ -8,7 +8,8 @@
 :root {
   --white: #fff;
   --gray: #ccc;
-  --black: #000
+  --black: #000;
+  --green: rgb(70, 168, 50);
 }
 
 * {
@@ -70,6 +71,10 @@ li:nth-child(odd) {
   color: var(--black);
 }
 
+#form-container {
+  width: 20vw;
+}
+
 #scores-form {
   display: flex;
   flex-direction: column;
@@ -88,4 +93,12 @@ li:nth-child(odd) {
   border-radius: 0;
   box-shadow: 2px 2px var(--black);
   height: initial;
+}
+
+.hidden {
+  display: none;
+}
+
+#scores-form span {
+  background-color: var(--green);
 }
