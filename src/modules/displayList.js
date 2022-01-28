@@ -1,14 +1,14 @@
 
-const displayList = (data) => {
+function displayList(data) {
 
     const scoresContainer = document.getElementById('scores-list');
 
     scoresContainer.innerHTML = '';
 
-    data.result.forEach((score) => {
+    data.forEach((element) => {
         const line = document.createElement('li');
-        line.textContent = `${score.name}: ${score.number}`;
-        this.scoresContainer.appendChild(line);
+        line.textContent = `${element.user}: ${element.score}`;
+        scoresContainer.appendChild(line);
     });
 }
 

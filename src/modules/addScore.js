@@ -1,5 +1,5 @@
 import Score from './Score.js';
-// import { postData } from './data.js';
+import { postData } from './data.js';
 
 const addScore = () => {
   const score = new Score();
