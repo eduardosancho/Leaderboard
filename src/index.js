@@ -1,17 +1,20 @@
 import './style.css';
-import ScoresList from './modules/ScoresList';
+import addScore from './modules/addScore';
+import { getData } from './modules/data';
 
-const scoresList = new ScoresList();
+// Run this to get new game ID!
+// import addGame from './modules/addGame';
+// window.addEventListener('load', addGame);
 
 const addScoreForm = document.getElementById('scores-form');
 addScoreForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  scoresList.addScore();
+  addScore();
 });
-const addScoreButton = document.getElementById('add-score');
-addScoreButton.addEventListener('click', () => addScoreForm.trigger('submit'));
 
 const refreshButton = document.getElementById('refresh-button');
-refreshButton.addEventListener('click', () => scoresList.refreshScores());
+refreshButton.addEventListener('click', () => {
+  getData();
+});
 
-scoresList.displayList();
+getData();
