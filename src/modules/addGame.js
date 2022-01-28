@@ -14,7 +14,5 @@ export default async function addGame() {
     },
   });
   const data = await response.json();
-  console.log(data);
   gameId = data.result.slice(14, 34);
-  console.log(gameId);
 }
