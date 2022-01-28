@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 
 const basicURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
-let gameId = 'kx9a3dil6og5G5rfrqFt'; // SudokuOrigami GameID
+let gameId = ''; // SudokuOrigami GameID: kx9a3dil6og5G5rfrqFt
 
 // https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/kx9a3dil6og5G5rfrqFt/scores/
 
@@ -15,4 +15,5 @@ export default async function addGame() {
   });
   const data = await response.json();
   gameId = data.result.slice(14, 34);
+  return gameId;
 }
