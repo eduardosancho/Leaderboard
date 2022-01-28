@@ -9,6 +9,12 @@
   font-family: 'Varela', sans-serif;
 }
 
+body {
+  background-image: url(./elden_ring.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h1 {
   text-align: center;
   text-decoration: underline;
