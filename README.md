@@ -5,7 +5,7 @@
 > Keep a record of users' scores.
 
 # Live Version
-This is the [link](https://eduardosancho.github.io/Leaderboard/) that will direct you to the live version.
+This is the [link](https://eduardosancho.github.io/Leaderboard/src/index.html) that will direct you to the live version.
 
 ![screenshot](./Screenshot.png)
 
