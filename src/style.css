@@ -48,6 +48,11 @@ main {
   border-radius: 0;
   background-color: var(--white);
   box-shadow: 2px 2px var(--black);
+  transition: transform 0.5s;
+}
+
+#recent-scores button:hover {
+  transform: scale(1.1);
 }
 
 #scores-list {
@@ -87,12 +92,17 @@ li:nth-child(odd) {
   height: 30px;
 }
 
-#scores-form input:last-child {
+#add-score {
   align-self: flex-end;
   border: solid var(--white) 1px;
   border-radius: 0;
   box-shadow: 2px 2px var(--black);
   height: initial;
+  transition: transform 0.5s;
+}
+
+#add-score:hover {
+  transform: scale(0.9);
 }
 
 .hidden {
