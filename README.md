@@ -41,6 +41,18 @@ git checkout -b branch-name
 ```
 
 After that you should be ready to go.
+<hr>
+
+### Running locally
+~~~ bash
+npm run build #to prepare and update your dist folder
+
+# and then
+
+npm start #to start a localhost server
+~~~
+<hr>
+
 ### Run tests
 Before pushing changes to your branch, I would recommend opening this file:
 
